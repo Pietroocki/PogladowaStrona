@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shadow Detailing Poznań</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Górny pasek -->
+    <header class="header">
+        <a href="#start" class="logo">
+            Shadow<span>Detailing</span>
+        </a>
+
+        <button class="menu-button" id="menuButton" aria-label="Otwórz menu" aria-expanded="false">
+            ☰
+        </button>
+    </header>
+
+    <!-- Boczne menu -->
+    <aside class="sidebar" id="sidebar">
+        <button
+            class="close-menu"
+            id="closeMenu"
+            aria-label="Zamknij menu"
+        >
+            ×
+        </button>
+
+        <nav class="sidebar-nav">
+            <a href="#start">Start</a>
+            <a href="#oferta">Oferta</a>
+            <a href="#realizacje">Realizacje</a>
+            <a href="#cennik">Cennik</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </aside>
+
+    <!-- Przyciemnienie tła -->
+    <div class="overlay" id="overlay"></div>
+
+    <main>
+
+        <!-- Baner -->
+        <section class="banner" id="start">
+            <div class="banner-content">
+                <p class="banner-label">Auto detailing Poznań</p>
+
+                <h1>
+                    Przywracamy samochodom
+                    <span>wyjątkowy wygląd</span>
+                </h1>
+
+                <p>
+                    Profesjonalna pielęgnacja, korekta lakieru
+                    i zabezpieczenie Twojego samochodu.
+                </p>
+
+                <div class="banner-buttons">
+                    <a href="#kontakt" class="button button-primary">
+                        Umów wizytę
+                    </a>
+
+                    <a href="#realizacje" class="button button-secondary">
+                        Zobacz realizacje
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Oferta -->
+        <section class="section" id="oferta">
+            <div class="container">
+                <p class="section-label">Nasze usługi</p>
+                <h2>Zadbamy o każdy detal</h2>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Detailing wnętrza</h3>
+                        <p>
+                            Kompleksowe czyszczenie i zabezpieczenie
+                            wnętrza samochodu.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Korekta lakieru</h3>
+                        <p>
+                            Usuwanie zarysowań i przywrócenie
+                            głębi oraz połysku lakieru.
+                        </p>
+                    </article>
+
+                    <article class="service-card">
+                        <h3>Powłoka ceramiczna</h3>
+                        <p>
+                            Długotrwałe zabezpieczenie lakieru
+                            przed zabrudzeniami.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Realizacje -->
+        <section class="section section-dark" id="realizacje">
+            <div class="container">
+                <p class="section-label">Tak może wyglądać galeria wykonanych prac</p>
+                <h2>Realizacje</h2>
+
+                <div class="gallery">
+
+    <div class="gallery-item">
+        <img src="img/car-polish.jpg" alt="Korekta lakieru">
+
+        <div class="gallery-text">
+            <h3>Korekta lakieru</h3>
+            <p>Przywrócenie połysku i usunięcie drobnych rys.</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="img/clean-interior.jpg" alt="Detailing wnętrza">
+
+        <div class="gallery-text">
+            <h3>Detailing wnętrza</h3>
+            <p>Dokładne czyszczenie i odświeżenie wnętrza auta.</p>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="img/foam.jpg" alt="Mycie detailingowe">
+
+        <div class="gallery-text">
+            <h3>Mycie detailingowe</h3>
+            <p>Bezpieczne i dokładne oczyszczenie całego samochodu.</p>
+        </div>
+    </div>
+
+</div>
+            </div>
+        </section>
+
+        <!-- Cennik -->
+        <section class="section" id="cennik">
+            <div class="container">
+                <p class="section-label">Pakiety</p>
+                <h2>Przykładowy cennik</h2>
+
+                <div class="pricing-grid">
+                    <article class="price-card">
+                        <h3>Interior</h3>
+                        <p class="price">od 299 zł</p>
+                        <p>Kompleksowe czyszczenie wnętrza.</p>
+                    </article>
+
+                    <article class="price-card">
+                        <h3>Gloss</h3>
+                        <p class="price">od 699 zł</p>
+                        <p>Jednoetapowa korekta lakieru.</p>
+                    </article>
+
+                    <article class="price-card">
+                        <h3>Ceramic</h3>
+                        <p class="price">od 1499 zł</p>
+                        <p>Korekta oraz zabezpieczenie ceramiczne.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt -->
+        <section class="section section-dark" id="kontakt">
+            <div class="container">
+                <p class="section-label">Formularz demonstracyjny</p>
+                <h2>Umów wycenę samochodu</h2>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Imię" required>
+                    <input type="tel" placeholder="Numer telefonu" required>
+                    <input type="text" placeholder="Marka i model samochodu">
+
+                    <textarea
+                        placeholder="Jaką usługą jesteś zainteresowany?"
+                        rows="6"
+                    ></textarea>
+
+                    <button type="submit" class="button button-primary">
+                        Wyślij wiadomość
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>
+            Projekt demonstracyjny do portfolio. Zdjęcia pochodzą z serwisów stockowych.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
